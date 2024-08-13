@@ -32,6 +32,33 @@
 	&.has-tooltip-#{$direction}-fullhd
 		+fullhd
 			@include tooltip-direction(#{$direction})
+	&.has-tooltip-#{$direction}-fullhd-only
+		+fullhd-only
+			@include tooltip-direction(#{$direction})
+	&.has-tooltip-#{$direction}-until-ultrawide
+		+until-ultrawide
+			@include tooltip-direction(#{$direction})
+	&.has-tooltip-#{$direction}-ultrawide
+		+ultrawide
+			@include tooltip-direction(#{$direction})
+	&.has-tooltip-#{$direction}-ultrawide-only
+		+ultrawide-only
+			@include tooltip-direction(#{$direction})
+	&.has-tooltip-#{$direction}-until-fourk
+		+until-fourk
+			@include tooltip-direction(#{$direction})
+	&.has-tooltip-#{$direction}-fourk
+		+fourk
+			@include tooltip-direction(#{$direction})
+	&.has-tooltip-#{$direction}-fourk-only
+		+fourk-only
+			@include tooltip-direction(#{$direction})
+	&.has-tooltip-#{$direction}-until-eightk
+		+until-eightk
+			@include tooltip-direction(#{$direction})
+	&.has-tooltip-#{$direction}-eightk
+		+eightk
+			@include tooltip-direction(#{$direction})
 
 // Hidden breakpoints
 &.has-tooltip-hidden-mobile
@@ -100,6 +127,60 @@
 		&::before
 			opacity: 0 !important
 			display: none !important
+&.has-tooltip-hidden-fullhd-only
+	+fullhd-only
+		&::after,
+		&::before
+			opacity: 0 !important
+			display: none !important
+&.has-tooltip-hidden-until-ultrawide
+	+until-ultrawide
+		&::after,
+		&::before
+			opacity: 0 !important
+			display: none !important
+&.has-tooltip-hidden-ultrawide
+	+ultrawide
+		&::after,
+		&::before
+			opacity: 0 !important
+			display: none !important
+&.has-tooltip-hidden-ultrawide-only
+	+ultrawide-only
+		&::after,
+		&::before
+			opacity: 0 !important
+			display: none !important
+&.has-tooltip-hidden-until-fourk
+	+until-fourk
+		&::after,
+		&::before
+			opacity: 0 !important
+			display: none !important
+&.has-tooltip-hidden-fourk
+	+fourk
+		&::after,
+		&::before
+			opacity: 0 !important
+			display: none !important
+&.has-tooltip-hidden-fourk-only
+	+fourk-only
+		&::after,
+		&::before
+			opacity: 0 !important
+			display: none !important
+&.has-tooltip-hidden-until-eightk
+	+until-eightk
+		&::after,
+		&::before
+			opacity: 0 !important
+			display: none !important
+&.has-tooltip-hidden-eightk
+	+eightk
+		&::after,
+		&::before
+			opacity: 0 !important
+			display: none !important
 
 // Text alignement breakpoints
 @each $direction in (left, left), (centered, center), (right, right)
@@ -147,5 +228,41 @@
 				text-align: #{$text}
 	&.has-tooltip-text-#{$dir}-fullhd
 		+fullhd
+			&::before
+				text-align: #{$text}
+	&.has-tooltip-text-#{$dir}-fullhd-only
+		+fullhd-only
+			&::before
+				text-align: #{$text}
+	&.has-tooltip-text-#{$dir}-until-ultrawide
+		+until-ultrawide
+			&::before
+				text-align: #{$text}
+	&.has-tooltip-text-#{$dir}-ultrawide
+		+ultrawide
+			&::before
+				text-align: #{$text}
+	&.has-tooltip-text-#{$dir}-ultrawide-only
+		+ultrawide-only
+			&::before
+				text-align: #{$text}
+	&.has-tooltip-text-#{$dir}-until-fourk
+		+until-fourk
+			&::before
+				text-align: #{$text}
+	&.has-tooltip-text-#{$dir}-fourk
+		+fourk
+			&::before
+				text-align: #{$text}
+	&.has-tooltip-text-#{$dir}-fourk-only
+		+fourk-only
+			&::before
+				text-align: #{$text}
+	&.has-tooltip-text-#{$dir}-until-eightk
+		+until-eightk
+			&::before
+				text-align: #{$text}
+	&.has-tooltip-text-#{$dir}-eightk
+		+eightk
 			&::before
 				text-align: #{$text}
