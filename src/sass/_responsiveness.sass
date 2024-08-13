@@ -44,19 +44,19 @@
 	&.has-tooltip-#{$direction}-ultrawide-only
 		+ultrawide-only
 			@include tooltip-direction(#{$direction})
-	&.has-tooltip-#{$direction}-until-fourk
+	&.has-tooltip-#{$direction}-until-4k
 		+until-fourk
 			@include tooltip-direction(#{$direction})
-	&.has-tooltip-#{$direction}-fourk
+	&.has-tooltip-#{$direction}-4k
 		+fourk
 			@include tooltip-direction(#{$direction})
-	&.has-tooltip-#{$direction}-fourk-only
+	&.has-tooltip-#{$direction}-4k-only
 		+fourk-only
 			@include tooltip-direction(#{$direction})
-	&.has-tooltip-#{$direction}-until-eightk
+	&.has-tooltip-#{$direction}-until-8k
 		+until-eightk
 			@include tooltip-direction(#{$direction})
-	&.has-tooltip-#{$direction}-eightk
+	&.has-tooltip-#{$direction}-8k
 		+eightk
 			@include tooltip-direction(#{$direction})
 
@@ -151,31 +151,31 @@
 		&::before
 			opacity: 0 !important
 			display: none !important
-&.has-tooltip-hidden-until-fourk
+&.has-tooltip-hidden-until-4k
 	+until-fourk
 		&::after,
 		&::before
 			opacity: 0 !important
 			display: none !important
-&.has-tooltip-hidden-fourk
+&.has-tooltip-hidden-4k
 	+fourk
 		&::after,
 		&::before
 			opacity: 0 !important
 			display: none !important
-&.has-tooltip-hidden-fourk-only
+&.has-tooltip-hidden-4k-only
 	+fourk-only
 		&::after,
 		&::before
 			opacity: 0 !important
 			display: none !important
-&.has-tooltip-hidden-until-eightk
+&.has-tooltip-hidden-until-8k
 	+until-eightk
 		&::after,
 		&::before
 			opacity: 0 !important
 			display: none !important
-&.has-tooltip-hidden-eightk
+&.has-tooltip-hidden-8k
 	+eightk
 		&::after,
 		&::before
@@ -246,23 +246,23 @@
 		+ultrawide-only
 			&::before
 				text-align: #{$text}
-	&.has-tooltip-text-#{$dir}-until-fourk
+	&.has-tooltip-text-#{$dir}-until-4k
 		+until-fourk
 			&::before
 				text-align: #{$text}
-	&.has-tooltip-text-#{$dir}-fourk
+	&.has-tooltip-text-#{$dir}-4k
 		+fourk
 			&::before
 				text-align: #{$text}
-	&.has-tooltip-text-#{$dir}-fourk-only
+	&.has-tooltip-text-#{$dir}-4k-only
 		+fourk-only
 			&::before
 				text-align: #{$text}
-	&.has-tooltip-text-#{$dir}-until-eightk
+	&.has-tooltip-text-#{$dir}-until-8k
 		+until-eightk
 			&::before
 				text-align: #{$text}
-	&.has-tooltip-text-#{$dir}-eightk
+	&.has-tooltip-text-#{$dir}-8k
 		+eightk
 			&::before
 				text-align: #{$text}
